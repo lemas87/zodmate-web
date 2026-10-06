@@ -1,0 +1,67 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Community Guidelines · Zodmate</title>
+<meta name="description" content="Zodmate: friends, written in the stars. Meet people whose signs get along with yours.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#F6F3FF;--panel:#FFFFFF;--ink:#1E1640;--soft:#5A5080;--line:rgba(30,22,64,.14);--gold:#9A6B1F;--goldbg:rgba(154,107,31,.12);--seg:#ECE7FB;--segon:#E5BB6E;--segink:#2A1A05}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#130D27;--panel:rgba(255,255,255,.04);--ink:#F5F0FF;--soft:#B9B0D9;--line:rgba(255,255,255,.14);--gold:#EBC27A;--goldbg:rgba(235,194,122,.16);--seg:rgba(255,255,255,.06);--segon:#EBC27A;--segink:#2A1A05}}
+:root[data-theme="dark"]{--bg:#130D27;--panel:rgba(255,255,255,.04);--ink:#F5F0FF;--soft:#B9B0D9;--line:rgba(255,255,255,.14);--gold:#EBC27A;--goldbg:rgba(235,194,122,.16);--seg:rgba(255,255,255,.06);--segon:#EBC27A;--segink:#2A1A05}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:44rem;margin:0 auto;padding:24px 22px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:10px;font:600 24px/1 Fraunces,Georgia,serif;color:var(--ink);text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:9px}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:7px 12px;border-radius:999px;color:var(--soft);text-decoration:none;font-weight:600;font-size:14px}
+nav a.on{background:var(--seg);color:var(--ink)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;color:var(--soft);font:700 13px Figtree,sans-serif;padding:6px 12px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--segon);color:var(--segink)}
+h1{font:600 clamp(30px,6vw,42px)/1.15 Fraunces,Georgia,serif;letter-spacing:-.01em;margin:8px 0 6px}
+h2{font:600 21px/1.3 Fraunces,Georgia,serif;margin:30px 0 8px}
+.updated{color:var(--soft);font-size:14px;margin:0 0 18px}
+p,li{color:var(--ink)} ul{padding-left:1.2em} li{margin:6px 0}
+a{color:var(--gold)}
+.hero{text-align:center;padding:30px 0 10px}
+.hero img{width:96px;height:96px;border-radius:24px;box-shadow:0 12px 40px rgba(154,107,31,.25)}
+.hero p{color:var(--soft);font-size:19px;max-width:32rem;margin:10px auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:12px;margin:26px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px}
+.card b{display:block;font:600 18px Fraunces,Georgia,serif;margin-bottom:4px}
+.card span{color:var(--soft);font-size:15px}
+.mail{display:inline-block;background:var(--goldbg);color:var(--gold);font-weight:700;padding:12px 18px;border-radius:14px;text-decoration:none;margin:6px 0 10px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--soft);font-size:14px;display:flex;gap:14px;flex-wrap:wrap}
+footer a{color:var(--soft)}
+[data-lang]{display:none} html[lang="tr"] [data-lang="tr"], html[lang="en"] [data-lang="en"]{display:block}
+html[lang="tr"] span[data-lang="tr"], html[lang="en"] span[data-lang="en"]{display:inline}
+</style><script>
+(function(){var q=new URLSearchParams(location.search).get('lang');var s=null;try{s=localStorage.getItem('zm-lang')}catch(e){}
+var l=q||s||((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');document.documentElement.lang=l;
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set-lang]');if(!b)return;var v=b.getAttribute('data-set-lang');
+document.documentElement.lang=v;try{localStorage.setItem('zm-lang',v)}catch(e){}document.querySelectorAll('[data-set-lang]').forEach(function(x){x.setAttribute('aria-pressed',x.getAttribute('data-set-lang')===v)})});
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[data-set-lang]').forEach(function(x){x.setAttribute('aria-pressed',x.getAttribute('data-set-lang')===document.documentElement.lang)})})})();</script></head><body><div class="wrap">
+<header><a class="brand" href="index.html"><img src="icon.png" alt="">Zodmate</a>
+<div class="lang" role="group" aria-label="Language"><button data-set-lang="tr">TR</button><button data-set-lang="en">EN</button></div></header>
+<nav><a href="index.html"><span data-lang="tr">Zodmate</span><span data-lang="en">Zodmate</span></a><a href="privacy.html"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span></a><a href="terms.html"><span data-lang="tr">Şartlar</span><span data-lang="en">Terms</span></a><a href="guidelines.html" class="on" aria-current="page"><span data-lang="tr">Kurallar</span><span data-lang="en">Guidelines</span></a><a href="support.html"><span data-lang="tr">Destek</span><span data-lang="en">Support</span></a></nav>
+<main><article data-lang="tr" lang="tr"><h1>Topluluk Kuralları</h1><p class="updated">Son güncelleme: 3 Ekim 2026</p><p>Zodmate arkadaş edinme yeridir. Bu kurallar onu nazik ve güvenli tutar. Zodmate, tacize ve kötü niyetli içeriğe asla göz yummaz.</p>
+<section><h2>Nazik ol</h2><p>İnsanlara, sana nasıl davranılmasını istiyorsan öyle davran. Hakaret etmeden farklı düşünebilirsin. Biri ilgilenmiyorsa üstelemeden bırak.</p></section>
+<section><h2>Yasak olanlar</h2><ul><li>Taciz, zorbalık, tehdit veya biri "hayır" dedikten sonra ısrar etmek.</li><li>Irk, etnik köken, din, milliyet, cinsiyet, cinsel yönelim, engellilik veya başka bir kimliğe dayalı nefret söylemi ya da saldırı.</li><li>Cinsel içerik, çıplaklık veya cinsel mesajlar. Zodmate bir arkadaşlık uygulamasıdır.</li><li>Küçükleri cinsel ya da zarar verici şekilde içeren her şey. Bunu yetkililere bildiririz.</li><li>Şiddet, kendine zarar vermeyi teşvik, yasa dışı uyuşturucu, silah satışı veya diğer yasa dışı faaliyetler.</li><li>Spam, dolandırıcılık, satış yapmak, para istemek veya insanları başka sitelere yönlendirmek.</li><li>Sahte profiller, başkası gibi davranmak veya başkasının fotoğraflarını kullanmak.</li><li>Birinin özel bilgilerini veya sohbet ekran görüntülerini izinsiz paylaşmak.</li></ul></section>
+<section><h2>Fotoğraflar</h2><p>Kendi fotoğraflarını kullan. Çıplaklık, şiddet, tek başına çocuklar veya izni olmayan başka kişiler olmasın. Her fotoğraf başkaları görmeden önce kontrol edilir.</p></section>
+<section><h2>Odalar ve oyunlar</h2><p>Oda sahipleri kendi odalarında kişileri susturabilir, çıkarabilir veya engelleyebilir. Kararlarına saygı göster. Oyunları eğlenceli ve dostça tut.</p></section>
+<section><h2>Şikâyet et ve engelle</h2><p>Bir şey yanlış geliyorsa şikâyet et: mesaja basılı tut, profildeki bayrağa dokun ya da sohbet menüsünü kullan. Birini engellediğinde her yerde birbirinizden gizlenirsiniz. Şikâyetler gizlidir; kişiye kimin şikâyet ettiği söylenmez.</p></section>
+<section><h2>Kurallar çiğnendiğinde</h2><p>Durumun ciddiyetine göre içeriği kaldırabilir, uyarı gönderebilir, hesabı birkaç gün askıya alabilir veya kalıcı olarak kapatabiliriz. Tehdit veya küçükleri içeren durumlar gibi ciddi vakalar kalıcı kapatmayla sonuçlanır ve yetkililere bildirilebilir.</p></section>
+<section><h2>Güvende kal</h2><p>Birine güvenene kadar kişisel bilgilerini paylaşma. Yüz yüze buluşacaksan kalabalık bir yer seç ve nereye gittiğini bir arkadaşına söyle. Tehlikedeysen yerel acil yardım hattını ara.</p></section></article><article data-lang="en" lang="en"><h1>Community Guidelines</h1><p class="updated">Last updated: October 3, 2026</p><p>Zodmate is a place to make friends. These rules keep it kind and safe. Zodmate has zero tolerance for harassment and abusive content.</p>
+<section><h2>Be kind</h2><p>Treat people the way you want to be treated. Disagree without insulting. If someone is not interested, let it go.</p></section>
+<section><h2>Not allowed</h2><ul><li>Harassment, bullying, threats, or pressuring someone after they said no.</li><li>Hate speech or attacks based on race, ethnicity, religion, nationality, gender, sexual orientation, disability or any other identity.</li><li>Sexual content, nudity, or sexual messages. Zodmate is a friendship app.</li><li>Anything involving minors in a sexual or harmful way. We report it to the authorities.</li><li>Violence, self-harm encouragement, illegal drugs, weapons sales or other illegal activity.</li><li>Spam, scams, selling things, asking for money, or sending people to other sites.</li><li>Fake profiles, pretending to be someone else, or using someone else's photos.</li><li>Sharing someone's private information or screenshots of their chats without permission.</li></ul></section>
+<section><h2>Photos</h2><p>Use photos of yourself. No nudity, violence, children on their own, or other people without their permission. Every photo is checked before others can see it.</p></section>
+<section><h2>Rooms and games</h2><p>Room owners can mute, remove or block people from their own room. Respect their decisions. Keep games fun and friendly.</p></section>
+<section><h2>Report and block</h2><p>If something feels wrong, report it: press and hold a message, tap the flag on a profile, or use the chat menu. Blocking someone hides you from each other everywhere. Reports are private; the person is not told who reported them.</p></section>
+<section><h2>What happens when rules are broken</h2><p>Depending on how serious it is, we may remove the content, send a warning, suspend the account for a few days, or ban it permanently. Serious cases, such as threats or anything involving minors, lead to a permanent ban and may be reported to the authorities.</p></section>
+<section><h2>Stay safe</h2><p>Keep personal details private until you trust someone. If you meet in person, choose a public place and tell a friend where you are going. If you are ever in danger, contact local emergency services.</p></section></article></main>
+<footer><span>© 2026 Zodmate · Erkan Alagöz</span><a href="mailto:zodmatesupport@gmail.com">zodmatesupport@gmail.com</a><a href="privacy.html"><span data-lang="tr">Gizlilik Politikası</span><span data-lang="en">Privacy Policy</span></a><a href="terms.html"><span data-lang="tr">Kullanım Şartları</span><span data-lang="en">Terms of Use</span></a></footer>
+</div></body></html>

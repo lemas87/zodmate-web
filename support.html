@@ -1,0 +1,65 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support · Zodmate</title>
+<meta name="description" content="Zodmate: friends, written in the stars. Meet people whose signs get along with yours.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#F6F3FF;--panel:#FFFFFF;--ink:#1E1640;--soft:#5A5080;--line:rgba(30,22,64,.14);--gold:#9A6B1F;--goldbg:rgba(154,107,31,.12);--seg:#ECE7FB;--segon:#E5BB6E;--segink:#2A1A05}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#130D27;--panel:rgba(255,255,255,.04);--ink:#F5F0FF;--soft:#B9B0D9;--line:rgba(255,255,255,.14);--gold:#EBC27A;--goldbg:rgba(235,194,122,.16);--seg:rgba(255,255,255,.06);--segon:#EBC27A;--segink:#2A1A05}}
+:root[data-theme="dark"]{--bg:#130D27;--panel:rgba(255,255,255,.04);--ink:#F5F0FF;--soft:#B9B0D9;--line:rgba(255,255,255,.14);--gold:#EBC27A;--goldbg:rgba(235,194,122,.16);--seg:rgba(255,255,255,.06);--segon:#EBC27A;--segink:#2A1A05}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:44rem;margin:0 auto;padding:24px 22px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:10px;font:600 24px/1 Fraunces,Georgia,serif;color:var(--ink);text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:9px}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:7px 12px;border-radius:999px;color:var(--soft);text-decoration:none;font-weight:600;font-size:14px}
+nav a.on{background:var(--seg);color:var(--ink)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;color:var(--soft);font:700 13px Figtree,sans-serif;padding:6px 12px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--segon);color:var(--segink)}
+h1{font:600 clamp(30px,6vw,42px)/1.15 Fraunces,Georgia,serif;letter-spacing:-.01em;margin:8px 0 6px}
+h2{font:600 21px/1.3 Fraunces,Georgia,serif;margin:30px 0 8px}
+.updated{color:var(--soft);font-size:14px;margin:0 0 18px}
+p,li{color:var(--ink)} ul{padding-left:1.2em} li{margin:6px 0}
+a{color:var(--gold)}
+.hero{text-align:center;padding:30px 0 10px}
+.hero img{width:96px;height:96px;border-radius:24px;box-shadow:0 12px 40px rgba(154,107,31,.25)}
+.hero p{color:var(--soft);font-size:19px;max-width:32rem;margin:10px auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:12px;margin:26px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px}
+.card b{display:block;font:600 18px Fraunces,Georgia,serif;margin-bottom:4px}
+.card span{color:var(--soft);font-size:15px}
+.mail{display:inline-block;background:var(--goldbg);color:var(--gold);font-weight:700;padding:12px 18px;border-radius:14px;text-decoration:none;margin:6px 0 10px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--soft);font-size:14px;display:flex;gap:14px;flex-wrap:wrap}
+footer a{color:var(--soft)}
+[data-lang]{display:none} html[lang="tr"] [data-lang="tr"], html[lang="en"] [data-lang="en"]{display:block}
+html[lang="tr"] span[data-lang="tr"], html[lang="en"] span[data-lang="en"]{display:inline}
+</style><script>
+(function(){var q=new URLSearchParams(location.search).get('lang');var s=null;try{s=localStorage.getItem('zm-lang')}catch(e){}
+var l=q||s||((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');document.documentElement.lang=l;
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set-lang]');if(!b)return;var v=b.getAttribute('data-set-lang');
+document.documentElement.lang=v;try{localStorage.setItem('zm-lang',v)}catch(e){}document.querySelectorAll('[data-set-lang]').forEach(function(x){x.setAttribute('aria-pressed',x.getAttribute('data-set-lang')===v)})});
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[data-set-lang]').forEach(function(x){x.setAttribute('aria-pressed',x.getAttribute('data-set-lang')===document.documentElement.lang)})})})();</script></head><body><div class="wrap">
+<header><a class="brand" href="index.html"><img src="icon.png" alt="">Zodmate</a>
+<div class="lang" role="group" aria-label="Language"><button data-set-lang="tr">TR</button><button data-set-lang="en">EN</button></div></header>
+<nav><a href="index.html"><span data-lang="tr">Zodmate</span><span data-lang="en">Zodmate</span></a><a href="privacy.html"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span></a><a href="terms.html"><span data-lang="tr">Şartlar</span><span data-lang="en">Terms</span></a><a href="guidelines.html"><span data-lang="tr">Kurallar</span><span data-lang="en">Guidelines</span></a><a href="support.html" class="on" aria-current="page"><span data-lang="tr">Destek</span><span data-lang="en">Support</span></a></nav>
+<main>
+<h1><span data-lang="tr">Destek</span><span data-lang="en">Support</span></h1>
+<p><span data-lang="tr">Bir sorun mu var, bir öneri mi? Bize yaz; genellikle 2 iş günü içinde cevap veriyoruz.</span><span data-lang="en">Something wrong, or an idea? Write to us; we usually reply within 2 business days.</span></p>
+<a class="mail" href="mailto:zodmatesupport@gmail.com">zodmatesupport@gmail.com</a>
+<h2><span data-lang="tr">Sık sorulanlar</span><span data-lang="en">Frequently asked</span></h2>
+<section><h2 style="font-size:18px"><span data-lang="tr">Hesabımı nasıl silerim?</span><span data-lang="en">How do I delete my account?</span></h2>
+<p><span data-lang="tr">Uygulamada Profil &gt; Hesap &gt; Hesabı sil. Hesabın ve verilerin kalıcı olarak silinir.</span><span data-lang="en">In the app: Profile &gt; Account &gt; Delete account. Your account and data are deleted permanently.</span></p></section>
+<section><h2 style="font-size:18px"><span data-lang="tr">Birini nasıl şikâyet eder ya da engellerim?</span><span data-lang="en">How do I report or block someone?</span></h2>
+<p><span data-lang="tr">Sohbette ya da profilde sağ üstteki üç nokta menüsünden Şikâyet et veya Engelle. Şikâyetler moderasyon ekibimize gider.</span><span data-lang="en">From the three-dot menu at the top right of a chat or profile: Report or Block. Reports go to our moderation team.</span></p></section>
+<section><h2 style="font-size:18px"><span data-lang="tr">Plus aboneliğimi nasıl iptal ederim?</span><span data-lang="en">How do I cancel Plus?</span></h2>
+<p><span data-lang="tr">iPhone'da Ayarlar &gt; adın &gt; Abonelikler &gt; Zodmate. İptal, dönem sonunda geçerli olur.</span><span data-lang="en">On iPhone: Settings &gt; your name &gt; Subscriptions &gt; Zodmate. It ends at the close of the current period.</span></p></section>
+<section><h2 style="font-size:18px"><span data-lang="tr">Doğum tarihimi kim görebilir?</span><span data-lang="en">Who can see my birth date?</span></h2>
+<p><span data-lang="tr">Kimse. Doğum tarihin, saatin ve yerin sadece haritanı hesaplamak için kullanılır. Doğum gününü, perdeyi açtığın arkadaşların sadece o gün görebilir; bunu kapatabilirsin.</span><span data-lang="en">Nobody. Your birth date, time and place are only used to calculate your chart. Friends you opened the curtain with can see that it is your birthday on the day; you can switch this off.</span></p></section></main>
+<footer><span>© 2026 Zodmate · Erkan Alagöz</span><a href="mailto:zodmatesupport@gmail.com">zodmatesupport@gmail.com</a><a href="privacy.html"><span data-lang="tr">Gizlilik Politikası</span><span data-lang="en">Privacy Policy</span></a><a href="terms.html"><span data-lang="tr">Kullanım Şartları</span><span data-lang="en">Terms of Use</span></a></footer>
+</div></body></html>

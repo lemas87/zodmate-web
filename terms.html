@@ -1,0 +1,71 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Terms of Use · Zodmate</title>
+<meta name="description" content="Zodmate: friends, written in the stars. Meet people whose signs get along with yours.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#F6F3FF;--panel:#FFFFFF;--ink:#1E1640;--soft:#5A5080;--line:rgba(30,22,64,.14);--gold:#9A6B1F;--goldbg:rgba(154,107,31,.12);--seg:#ECE7FB;--segon:#E5BB6E;--segink:#2A1A05}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#130D27;--panel:rgba(255,255,255,.04);--ink:#F5F0FF;--soft:#B9B0D9;--line:rgba(255,255,255,.14);--gold:#EBC27A;--goldbg:rgba(235,194,122,.16);--seg:rgba(255,255,255,.06);--segon:#EBC27A;--segink:#2A1A05}}
+:root[data-theme="dark"]{--bg:#130D27;--panel:rgba(255,255,255,.04);--ink:#F5F0FF;--soft:#B9B0D9;--line:rgba(255,255,255,.14);--gold:#EBC27A;--goldbg:rgba(235,194,122,.16);--seg:rgba(255,255,255,.06);--segon:#EBC27A;--segink:#2A1A05}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:44rem;margin:0 auto;padding:24px 22px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:10px;font:600 24px/1 Fraunces,Georgia,serif;color:var(--ink);text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:9px}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{padding:7px 12px;border-radius:999px;color:var(--soft);text-decoration:none;font-weight:600;font-size:14px}
+nav a.on{background:var(--seg);color:var(--ink)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;color:var(--soft);font:700 13px Figtree,sans-serif;padding:6px 12px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--segon);color:var(--segink)}
+h1{font:600 clamp(30px,6vw,42px)/1.15 Fraunces,Georgia,serif;letter-spacing:-.01em;margin:8px 0 6px}
+h2{font:600 21px/1.3 Fraunces,Georgia,serif;margin:30px 0 8px}
+.updated{color:var(--soft);font-size:14px;margin:0 0 18px}
+p,li{color:var(--ink)} ul{padding-left:1.2em} li{margin:6px 0}
+a{color:var(--gold)}
+.hero{text-align:center;padding:30px 0 10px}
+.hero img{width:96px;height:96px;border-radius:24px;box-shadow:0 12px 40px rgba(154,107,31,.25)}
+.hero p{color:var(--soft);font-size:19px;max-width:32rem;margin:10px auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:12px;margin:26px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px}
+.card b{display:block;font:600 18px Fraunces,Georgia,serif;margin-bottom:4px}
+.card span{color:var(--soft);font-size:15px}
+.mail{display:inline-block;background:var(--goldbg);color:var(--gold);font-weight:700;padding:12px 18px;border-radius:14px;text-decoration:none;margin:6px 0 10px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--soft);font-size:14px;display:flex;gap:14px;flex-wrap:wrap}
+footer a{color:var(--soft)}
+[data-lang]{display:none} html[lang="tr"] [data-lang="tr"], html[lang="en"] [data-lang="en"]{display:block}
+html[lang="tr"] span[data-lang="tr"], html[lang="en"] span[data-lang="en"]{display:inline}
+</style><script>
+(function(){var q=new URLSearchParams(location.search).get('lang');var s=null;try{s=localStorage.getItem('zm-lang')}catch(e){}
+var l=q||s||((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');document.documentElement.lang=l;
+document.addEventListener('click',function(e){var b=e.target.closest('[data-set-lang]');if(!b)return;var v=b.getAttribute('data-set-lang');
+document.documentElement.lang=v;try{localStorage.setItem('zm-lang',v)}catch(e){}document.querySelectorAll('[data-set-lang]').forEach(function(x){x.setAttribute('aria-pressed',x.getAttribute('data-set-lang')===v)})});
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[data-set-lang]').forEach(function(x){x.setAttribute('aria-pressed',x.getAttribute('data-set-lang')===document.documentElement.lang)})})})();</script></head><body><div class="wrap">
+<header><a class="brand" href="index.html"><img src="icon.png" alt="">Zodmate</a>
+<div class="lang" role="group" aria-label="Language"><button data-set-lang="tr">TR</button><button data-set-lang="en">EN</button></div></header>
+<nav><a href="index.html"><span data-lang="tr">Zodmate</span><span data-lang="en">Zodmate</span></a><a href="privacy.html"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span></a><a href="terms.html" class="on" aria-current="page"><span data-lang="tr">Şartlar</span><span data-lang="en">Terms</span></a><a href="guidelines.html"><span data-lang="tr">Kurallar</span><span data-lang="en">Guidelines</span></a><a href="support.html"><span data-lang="tr">Destek</span><span data-lang="en">Support</span></a></nav>
+<main><article data-lang="tr" lang="tr"><h1>Kullanım Şartları</h1><p class="updated">Son güncelleme: 3 Ekim 2026</p><p>Bu şartlar, Zodmate'i kullanman için seninle Zodmate'in bireysel geliştiricisi Erkan Alagöz arasındaki sözleşmedir. Hesap oluşturarak bunları kabul etmiş olursun.</p>
+<section><h2>Zodmate'i kimler kullanabilir</h2><p>En az 18 yaşında olmalı, bağlayıcı bir sözleşme yapabilmeli ve uygulamayı kullanması yasaklanmamış olmalısın. Her kişiye bir hesap. Kendin hakkında doğru bilgi ver.</p></section>
+<section><h2>Hesabın</h2><p>Şifreni güvende tut. Hesabında olanlardan sen sorumlusun. Hesabını istediğin zaman Profil &gt; Hesabı sil bölümünden silebilirsin.</p></section>
+<section><h2>İçeriğin</h2><ul><li>Paylaştığın içeriğin (fotoğraflar, mesajlar, sorular, oda mesajları) sahibi sensin. Uygulamanın çalışabilmesi için bize bunları Zodmate içinde saklama ve gösterme konusunda sınırlı bir izin verirsin.</li><li>Yalnızca paylaşma hakkına sahip olduğun içeriği paylaş. Bu şartların bir parçası olan Topluluk Kuralları'na uy.</li></ul></section>
+<section><h2>Güvenlik ve moderasyon</h2><p>Bu şartları veya Topluluk Kuralları'nı ihlal eden içerikleri kaldırabilir, hesaplara uyarı verebilir, askıya alabilir veya kalıcı olarak kapatabiliriz; yasa dışı faaliyetleri yetkililere bildirebiliriz. İstediğin zaman herkesi şikâyet edebilir ve engelleyebilirsin.</p></section>
+<section><h2>Astroloji ve yapay zeka</h2><p>Yorumlar, uyum puanları, tarot ve yapay zeka cevapları eğlence ve düşünme amaçlıdır. Sağlık, para, hukuk veya ilişkiler konusunda tavsiye değildir; yapay zeka cevapları hatalı olabilir.</p></section>
+<section><h2>Zodmate Plus ve satın almalar</h2><ul><li>Zodmate Plus, Apple Kimliğin üzerinden alınan, kendiliğinden yenilenen bir aboneliktir (haftalık, aylık veya yıllık). Ücret, satın almayı onayladığında alınır.</li><li>Dönem bitmeden en az 24 saat önce otomatik yenilemeyi kapatmazsan kendiliğinden yenilenir. iPhone Ayarlar &gt; Apple Kimliği &gt; Abonelikler bölümünden yönetebilir veya iptal edebilirsin. Uygulamayı ya da hesabını silmek aboneliği iptal etmez.</li><li>Tek seferlik satın almalar (yıllık öngörü, Süper merhaba veya Öne çıkar gibi), kanun veya Apple politikaları aksini öngörmedikçe kesindir. İadeleri Apple yönetir.</li></ul></section>
+<section><h2>Sunduğumuz hizmet</h2><p>Zodmate'i erişilebilir ve güvenli tutmak için çalışırız, ancak uygulama "olduğu gibi" sunulur. Diğer kullanıcıların uygulama içindeki veya dışındaki davranışlarından sorumlu değiliz. Gerçek hayatta tanışırken dikkatli ol.</p></section>
+<section><h2>Sorumluluk</h2><p>Kanunun izin verdiği ölçüde dolaylı zararlardan sorumlu değiliz ve toplam sorumluluğumuz son 12 ayda bize ödediğin tutarla sınırlıdır. Bu hükümler, kanunen sınırlanamayan tüketici haklarını etkilemez.</p></section>
+<section><h2>Değişiklikler, hukuk ve iletişim</h2><p>Bu şartları güncelleyebiliriz ve önemli değişiklikleri uygulamada bildiririz. Bu şartlara Türkiye Cumhuriyeti hukuku uygulanır; tüketici hakların saklı kalmak kaydıyla İstanbul mahkemeleri yetkilidir. İletişim: zodmatesupport@gmail.com.</p></section></article><article data-lang="en" lang="en"><h1>Terms of Use</h1><p class="updated">Last updated: October 3, 2026</p><p>These terms are the agreement between you and Erkan Alagöz, the individual developer of Zodmate, for using Zodmate. By creating an account you accept them.</p>
+<section><h2>Who can use Zodmate</h2><p>You must be at least 18, able to make a binding agreement, and not barred from using the app. One account per person. Give true information about yourself.</p></section>
+<section><h2>Your account</h2><p>Keep your password safe. You are responsible for what happens in your account. You can delete it at any time in Profile &gt; Delete account.</p></section>
+<section><h2>Your content</h2><ul><li>You keep ownership of what you post (photos, messages, questions, room messages). You give us a limited licence to store and show it inside Zodmate so the app can work.</li><li>Only post content you have the right to share. Follow the Community Guidelines, which are part of these terms.</li></ul></section>
+<section><h2>Safety and moderation</h2><p>We may remove content, warn, suspend or ban accounts that break these terms or the Community Guidelines, and we may report illegal activity to the authorities. You can report and block anyone at any time.</p></section>
+<section><h2>Astrology and AI</h2><p>Readings, compatibility scores, tarot and AI answers are for entertainment and reflection. They are not advice about health, money, law or relationships, and AI answers can be wrong.</p></section>
+<section><h2>Zodmate Plus and purchases</h2><ul><li>Zodmate Plus is an auto-renewing subscription (weekly, monthly or yearly) bought through your Apple ID. Payment is charged when you confirm the purchase.</li><li>It renews automatically unless you turn off auto-renew at least 24 hours before the end of the period. You can manage or cancel it in your iPhone Settings &gt; Apple ID &gt; Subscriptions. Deleting the app or your account does not cancel it.</li><li>One-off purchases (such as the yearly forecast, Super hi or Boost) are final except where the law or Apple's policies say otherwise. Refunds are handled by Apple.</li></ul></section>
+<section><h2>What we provide</h2><p>We work to keep Zodmate available and safe, but the app is provided "as is". We are not responsible for how other users behave, on or off the app. Meet people in real life carefully.</p></section>
+<section><h2>Liability</h2><p>To the extent the law allows, we are not liable for indirect losses, and our total liability is limited to the amount you paid us in the last 12 months. Nothing here limits rights you have as a consumer that cannot be limited by law.</p></section>
+<section><h2>Changes, law and contact</h2><p>We may update these terms and will tell you in the app about important changes. These terms are governed by the laws of the Republic of Türkiye; Istanbul courts are competent, without prejudice to your consumer rights. Contact: zodmatesupport@gmail.com.</p></section></article></main>
+<footer><span>© 2026 Zodmate · Erkan Alagöz</span><a href="mailto:zodmatesupport@gmail.com">zodmatesupport@gmail.com</a><a href="privacy.html"><span data-lang="tr">Gizlilik Politikası</span><span data-lang="en">Privacy Policy</span></a><a href="terms.html"><span data-lang="tr">Kullanım Şartları</span><span data-lang="en">Terms of Use</span></a></footer>
+</div></body></html>
