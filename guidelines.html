@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Community Guidelines · Zodmate</title>
 <meta name="description" content="Zodmate: friends, written in the stars. Meet people whose signs get along with yours.">
-<link rel="icon" href="icon.png">
+<link rel="icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -37,11 +37,11 @@ a{color:var(--gold)}
 .mail{display:inline-block;background:var(--goldbg);color:var(--gold);font-weight:700;padding:12px 18px;border-radius:14px;text-decoration:none;margin:6px 0 10px}
 footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:var(--soft);font-size:14px;display:flex;gap:14px;flex-wrap:wrap}
 footer a{color:var(--soft)}
-[data-lang]{display:none} html[lang="tr"] [data-lang="tr"], html[lang="en"] [data-lang="en"]{display:block}
-html[lang="tr"] span[data-lang="tr"], html[lang="en"] span[data-lang="en"]{display:inline}
+[data-lang]{display:none} html[lang="tr"] [data-lang="tr"], html[lang="en"] [data-lang="en"], html[lang="es"] [data-lang="en"], html[lang="de"] [data-lang="en"], html[lang="fr"] [data-lang="en"], html[lang="it"] [data-lang="en"]{display:block}
+html[lang="tr"] span[data-lang="tr"], html[lang="en"] span[data-lang="en"], html[lang="es"] span[data-lang="en"], html[lang="de"] span[data-lang="en"], html[lang="fr"] span[data-lang="en"], html[lang="it"] span[data-lang="en"]{display:inline}
 </style><script>
 (function(){var q=new URLSearchParams(location.search).get('lang');var s=null;try{s=localStorage.getItem('zm-lang')}catch(e){}
-var l=q||s||((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');document.documentElement.lang=l;
+var n=(navigator.language||'').slice(0,2).toLowerCase();var l=q||s||(['tr','es','de','fr','it'].indexOf(n)>=0?n:'en');document.documentElement.lang=l;
 document.addEventListener('click',function(e){var b=e.target.closest('[data-set-lang]');if(!b)return;var v=b.getAttribute('data-set-lang');
 document.documentElement.lang=v;try{localStorage.setItem('zm-lang',v)}catch(e){}document.querySelectorAll('[data-set-lang]').forEach(function(x){x.setAttribute('aria-pressed',x.getAttribute('data-set-lang')===v)})});
 document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[data-set-lang]').forEach(function(x){x.setAttribute('aria-pressed',x.getAttribute('data-set-lang')===document.documentElement.lang)})})})();</script></head><body><div class="wrap">
